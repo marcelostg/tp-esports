@@ -1,0 +1,115 @@
+.contenedor-games {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.intro-games {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.intro-games h1 {
+    font-size: 3.5rem;
+    color: var(--tp-orange);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.intro-games p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+.lista-juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.game-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    background: var(--background-secondary);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--tp-blue);
+}
+
+.game-card.reverse {
+    direction: rtl; /* Inverts the visual order of elements */
+}
+
+.game-card.reverse .game-info {
+    direction: ltr; /* Restores text to its normal reading direction */
+}
+
+/* Badges and Text */
+.badge {
+    background-color: var(--tp-orange);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.game-info h2 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    color: var(--tp-blue);
+}
+
+.game-info p {
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.game-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-card:hover .game-img img {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 850px) {
+    .game-card, .game-card.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        text-align: center;
+    }
+    
+    .game-img {
+        order: -1; /* Image always stays on top on mobile devices */
+        height: 200px;
+    }
+
+    .intro-games h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,129 @@
+.history-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.history-title {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--tp-orange);
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.story-section {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+    align-items: flex-start;
+}
+
+.story-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.story-content {
+    flex: 1.5;
+}
+
+.story-content h2{
+    color: var(--tp-blue);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--tp-orange);
+    display: inline-block;
+}
+
+.story-content h3 {
+    color: var(--tp-blue);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--tp-orange);
+    display: inline-block;
+}
+
+.story-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.roster-box {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-left: 4px solid var(--tp-blue);
+}
+
+strong {
+    color: var(--tp-orange);
+}
+
+ul {
+    color: var(--tp-blue);
+    font-weight: bold;
+}
+
+.story-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+}
+
+.image-placeholder {
+    text-align: center;
+}
+
+.image-placeholder img {
+    max-width: 250px;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.7));
+}
+
+.image-placeholder span {
+    display: block;
+    margin-top: 15px;
+    color: var(--tp-orange);
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.final-reflection {
+    margin-top: 100px;
+}
+
+.reflection-card {
+    background: var(--header-bg);
+    border: 2px solid var(--tp-orange);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.roster-list {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: var(--tp-blue);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .story-section, .story-section.reverse {
+        flex-direction: column;
+    }
+    .story-image {
+        position: static;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Perfil de cuenta - TP Esports.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <title>Registro | TP Esports</title>
+    
+</head>
+
+<body>
+    <header id="header-placeholder"></header>
+    <main>
+        <div class="contenedor-formulario">
+            <div class="form-card">
+                <h2>COMPLETA TU PERFIL</h2>
+                <p>Necesitamos estos datos para futuras inscripciones a torneos.</p>
+                
+                <form id="form-perfil">
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" id="p-correo" readonly style="opacity: 0.6;">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Nickname (In-game)</label>
+                        <input type="text" id="p-nickname" placeholder="Ej: TenZ#LAN" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" id="p-fecha-nac" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Rango Actual</label>
+                        <select id="p-rango" class="input-select" required>
+                            <option value="" disabled selected>Selecciona tu rango...</option>
+                            <option value="Hierro">Hierro</option>
+                            <option value="Bronce">Bronce</option>
+                            <option value="Plata">Plata</option>
+                            <option value="Oro">Oro</option>
+                            <option value="Platino">Platino</option>
+                            <option value="Diamante">Diamante</option>
+                            <option value="Ascendente">Ascendente</option>
+                            <option value="Inmortal">Inmortal</option>
+                            <option value="Radiante">Radiante</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; gap: 10px;">
+                        <div class="input-group" style="flex: 1;">
+                            <label>Rol Principal</label>
+                            <select id="p-rol-1" required>
+                                <option value="" disabled selected>Elige rol...</option>
+                                <option value="Duelista">Duelista</option>
+                                <option value="Iniciador">Iniciador</option>
+                                <option value="Controlador">Controlador</option>
+                                <option value="Centinela">Centinela</option>
+                            </select>
+                        </div>
+                        <div class="input-group" style="flex: 1;">
+                            <label>Rol Secundario</label>
+                            <select id="p-rol-2" required>
+                                <option value="" disabled selected>Elige rol...</option>
+                                <option value="Duelista">Duelista</option>
+                                <option value="Iniciador">Iniciador</option>
+                                <option value="Controlador">Controlador</option>
+                                <option value="Centinela">Centinela</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-guardar-perfil" >
+                        GUARDAR PERFIL
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+
+</body> 
+
+</html>

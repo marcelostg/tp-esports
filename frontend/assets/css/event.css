@@ -1,0 +1,120 @@
+/* Contenedor General */
+.contenedor-eventos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Master Santiago */
+.header-evento {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-evento h1 {
+    font-size: 3rem;
+    color: var(--tp-orange);
+}
+
+.banner-mediano {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--tp-blue);
+}
+
+.banner-mediano img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-evento {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.links-oficiales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-oficiales li {
+    margin-bottom: 12px;
+}
+
+.links-oficiales a {
+    color: var(--tp-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.links-oficiales a:hover {
+    color: var(--tp-orange);
+    padding-left: 5px;
+}
+
+/* Divisor Decorativo */
+.divisor-neon {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--tp-blue), transparent);
+}
+
+/* Premier & Roster */
+.seccion-premier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.player {
+    background: var(--background-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--tp-orange);
+}
+
+/* Tabla de Mapas */
+.tabla-eventos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-eventos th, .tabla-eventos td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.status.pronto {
+    background: var(--tp-blue);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .info-evento, .seccion-premier {
+        grid-template-columns: 1fr;
+    }
+    .header-evento h1 {
+        font-size: 2rem;
+    }
+}

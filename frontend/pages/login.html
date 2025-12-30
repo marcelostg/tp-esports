@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Únete a la comunidad de TP Esports. Crea tu cuenta aquí.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <title>Registro | TP Esports</title>
+    
+</head>
+
+<body>
+    <header id="header-placeholder"></header>
+
+    <main class="contenedor-formulario">
+        <section class="form-card">
+            <h2>Bienvenido a TP Esports</h2>
+            <p>Accede a nuestra comunidad con +5 años de historia.</p>
+
+            <button type="button" class="btn-google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                Continuar con Google
+            </button>
+
+            <div class="separador">
+                <span>o usa tu correo</span>
+            </div>
+
+            <div class="tabs-auth">
+                <button id="tab-login" class="tab-btn active">Iniciar Sesión</button>
+                <button id="tab-register" class="tab-btn">Crear Cuenta</button>
+            </div>
+
+            <div id="form-login" class="auth-content active">
+                <form class="formulario-tp">
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn-principal">Entrar</button>
+                </form>
+            </div>
+
+            <div id="form-register" class="auth-content">
+                <form class="formulario-tp">
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" id="reg-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Contraseña (mín. 6 caracteres)</label>
+                        <input type="password" id="reg-password" minlength="6" required>
+                    </div>
+                    <button type="submit" class="btn-principal">Crear Cuenta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

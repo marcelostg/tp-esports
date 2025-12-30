@@ -1,0 +1,130 @@
+.valorant-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Redes Sociales */
+.social-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.social-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 150px;
+    background: var(--header-bg);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: transform 0.3s, border-color 0.3s;
+    border: 1px solid #333;
+}
+
+.social-card img {
+    width: 100px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.social-card.youtube img {
+    transform: scale(1.8); 
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--tp-orange);
+}
+
+.youtube:hover { box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+.instagram:hover { box-shadow: 0 0 15px rgba(225, 48, 108, 0.3); }
+
+.academy-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    color: var(--tp-orange);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.video-item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    background: var(--background-secondary);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.video-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.video-text {
+    flex: 1;
+}
+
+.video-text h3 {
+    color: var(--tp-blue);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.video-tips {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.video-tips li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.video-wrapper {
+    flex: 1.5;
+    position: relative;
+    padding-bottom: 28.125%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--tp-orange);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-item, .video-item.reverse {
+        flex-direction: column;
+    }
+    .video-wrapper {
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+}
