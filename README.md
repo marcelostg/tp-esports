@@ -1,4 +1,9 @@
+
+
 # CS50x Final Project: TP Esports
+
+#### Video Demo: https://youtu.be/dcZd3QxrcAY
+#### Description:
 
 ## 1. Introduction and Motivation
 
